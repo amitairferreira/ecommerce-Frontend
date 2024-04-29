@@ -1,0 +1,12 @@
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(249, 241, 231, 1);
+    height: 80px;
+    padding: 10px;
+}
+
+.left-contents {
+    display: flex;
+    align-items: center;
+}

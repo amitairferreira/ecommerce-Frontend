@@ -1,0 +1,26 @@
+.secondaryFooter {
+  width: 1,440px;
+  height: 270px;
+  gap: 0px;
+  justify: space-between;
+  opacity: 0px;
+  background: rgba(250, 243, 234, 1);
+  align-items: center;
+  font-family: Poppins;
+  text-align: left;
+  white-space: nowrap;
+
+  span {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    color: rgba(36, 36, 36, 1);
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(137, 137, 137, 1);
+  }
+}

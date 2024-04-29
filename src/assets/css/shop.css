@@ -1,0 +1,52 @@
+.image-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-content h1 {
+    margin: 0;
+}
+
+.overlay-link {
+    display: inline;
+    margin-top: 10px;
+}
+
+.overlay-img {
+    margin-top: 10px;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(249, 241, 231, 1);
+    height: 80px;
+    padding: 10px;
+}
+
+.left-contents,
+.right-contents {
+    display: flex;
+    align-items: center;
+}
+
+.icon-nav {
+    margin-right: 10px;
+}
+
+.text-custom {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+}
