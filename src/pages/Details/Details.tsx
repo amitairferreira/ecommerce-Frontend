@@ -12,9 +12,9 @@ function Details() {
     <>  
       <section className="section-wrapper-details">
         <span className="left-contents">
-            <a href="./home">Home</a>
+            <a href="/home">Home</a>
             <img src={seta} alt="seta-direita" />
-            <a href="./home">Shop</a>
+            <a href="/home">Shop</a>
             <img src={seta} alt="seta-direita" />
             
             <hr className="detailsHr"/>

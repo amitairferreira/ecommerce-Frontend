@@ -14,13 +14,12 @@ function Shop() {
         <img src={backgroundShop} alt="Planta" />
         <div className="overlay-content-shop">
           <h1>Shop</h1>
-          <a href="./home" className="overlay-link home">Home</a>
+          <a href="/home" className="overlay-link home">Home</a>
           <img src={seta} alt="seta-direita" className="overlay-img" />
-          <a href="./shop" className="overlay-link shop">Shop</a>
+          <a href="/shop" className="overlay-link shop">Shop</a>
         </div>
       </section>   
 
-      {/* tentar adicionar em outro arquivo */}
       <section className="section-wrapper-shop">
         <span className="left-contents">
             <img className="icon-nav" src={filter} alt="Icone de filtro" />

@@ -3,7 +3,6 @@ import { Category } from './category.service';
 
 const BASE_URL = 'http://localhost:3001/product';
 
-// !add em arquivo separado
 export interface Product {
   id: number;
   name: string;

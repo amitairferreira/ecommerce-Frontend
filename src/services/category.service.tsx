@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const BASE_URL = 'http://localhost:3001/category';
 
-// !add em arquivo separado
 export interface Category {
   id: number;
   name: string;
