@@ -1,4 +1,4 @@
-# Projeto React
+# Project React
 
 ## In the project directory, you can run:
 
