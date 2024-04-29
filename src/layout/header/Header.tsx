@@ -11,7 +11,7 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-            <a className="navbar-brand" href="./home">
+            <a className="navbar-brand" href="/home">
                 <img src={logo} alt="Logo" width="50" height="50" />
                 <span className="text-color ms-2">Furniro</span>
             </a>
@@ -22,10 +22,10 @@ export function Header() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="./home">Home</a>
+                        <a className="nav-link" href="/home">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="./shop">Shop</a>
+                        <a className="nav-link" href="/shop">Shop</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/#">About</a>

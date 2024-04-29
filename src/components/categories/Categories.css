@@ -18,3 +18,7 @@ h5 {
   overflow-y: hidden;
   margin-top: 28px !important;
 }
+
+a h5 {
+  color: black;
+}

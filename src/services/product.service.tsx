@@ -25,11 +25,17 @@ const ProductService = {
     page: number = 1,
     pageSize = 10,
     order = 'ASC',
-    categoryId = null
+    categoryId?: string
   ): Promise<Product[]> {
     try {
+      let url: string;
+      if (categoryId && categoryId !== '')
+        url =`${BASE_URL}/category/${categoryId}`;
+      else
+        url =`${BASE_URL}/all?page=${page}&pageSize=${pageSize}&order=${order}`;
+
       const products = 
-        await axios.get<Product[]>(`${BASE_URL}/all?page=${page}&pageSize=${pageSize}&order=${order}&categoryId=${categoryId}`);
+        await axios.get<Product[]>(url);
       return products.data;
     } catch (error) {
       console.log('Erro ao obter produtos:', error);
