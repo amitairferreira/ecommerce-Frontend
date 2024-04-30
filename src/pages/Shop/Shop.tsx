@@ -20,6 +20,7 @@ function Shop() {
         </div>
       </section>   
 
+      {/* TODO  funcionalidade filtro   */}
       <section className="section-wrapper-shop">
         <span className="left-contents">
             <img className="icon-nav" src={filter} alt="Icone de filtro" />
@@ -31,16 +32,17 @@ function Shop() {
         </span>
     
         <span className="right-contents">
-            <p className="text-custom social-text">Show </p>
-            <input type="number" name="pageSize" id="pageSize" placeholder="16" />
-            <p className="text-custom social-text">Short by </p>
-            <input type="number" name="shortBy" id="shortBy" placeholder="Default" />
+          <p className="text-custom social-text">Show </p>
+          <input type="number" name="pageSize" id="pageSize" placeholder="16" />
+          <p className="text-custom social-text">Short by </p>
+          <input type="number" name="shortBy" id="shortBy" placeholder="Default" />
         </span>
       </section>
 
       <section className="row pt-5 pb-5 products">
         <ProductsList />
-            
+
+        {/* TODO   funcionalidade paginação  */}
         <div className="pagination pt-5">
           <button className="products-button"> 1</button>
           <button className="products-button"> 2</button>

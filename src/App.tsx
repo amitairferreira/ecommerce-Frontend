@@ -15,6 +15,7 @@ function App() {
         <Route index path="/shop" element={<Shop />} />
         <Route index path="/shop/:id" element={<Shop />} />
         <Route index path="/product/details/:id" element={<Details />} />
+        <Route index path="/product/details/:id/category/:categoryId" element={<Details />} />
       </Route>
     </Routes>
   );

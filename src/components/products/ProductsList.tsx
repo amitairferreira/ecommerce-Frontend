@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom';
 import "./Products.css";
 
 function ProductsList() {
-  const { id } = useParams();
+  const { categoryId } = useParams();
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const data = await ProductService.getProducts(1, 16, 'ASC', id);
+      const data = await ProductService.getProducts(1, 2, 'ASC', categoryId);
       setProducts(data);
     };
     
     fetchProducts();
-  }, [id]);
+  }, [categoryId]);
 
   return (
     <>
@@ -35,7 +35,7 @@ function ProductsList() {
               <div className="circle-tag isNew"><p>New</p></div>
             )}
             <div className="hover-overlay">
-              <a href={`/product/details/${product.id}`} className="product-link">
+              <a href={`/product/details/${product.id}/category/${product.category_id}?name=${product.name}`} className="product-link">
                 <button className="see-details-btn">See Details</button>
               </a>
             </div>
