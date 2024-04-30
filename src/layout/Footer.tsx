@@ -15,8 +15,8 @@ export function Footer() {
 
         <article className="col-2">
             <p className="linkTitle">Links</p>
-            <a className="row" href="./home">Home</a>
-            <a className="row" href="./shop">Shop</a>
+            <a className="row" href="/home">Home</a>
+            <a className="row" href="/shop">Shop</a>
             <a className="row" href="/#">About</a>
             <a className="row" href="/#">Contact</a>
         </article>
