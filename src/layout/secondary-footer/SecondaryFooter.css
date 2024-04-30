@@ -9,6 +9,7 @@
   font-family: Poppins;
   text-align: left;
   white-space: nowrap;
+  padding-left: 70px !important;
 
   span {
     font-size: 25px;
@@ -23,4 +24,24 @@
     line-height: 30px;
     color: rgba(137, 137, 137, 1);
   }
+}
+
+.warranty-info {
+  display: flex;
+  align-items: center; 
+}
+
+.image-column {
+  margin-right: 10px; 
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.warranty-info span,
+.warranty-info p {
+  margin: 0; 
 }

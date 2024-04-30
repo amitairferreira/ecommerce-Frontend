@@ -14,7 +14,7 @@ function Details() {
         <span className="left-contents">
             <a href="/home">Home</a>
             <img src={seta} alt="seta-direita" />
-            <a href="/home">Shop</a>
+            <a href="/shop">Shop</a>
             <img src={seta} alt="seta-direita" />
             
             <hr className="detailsHr"/>

@@ -38,19 +38,20 @@ function ProductsDetails() {
     <>
       <div className="row pt-4 details">
         <article className="col-1">
-          <img src={product.image_link} alt="imageDetails" />
+          <img src={product.image_link} alt="imageDetails" className="image" />
         </article>
         <article className="col-4">
-          <img src={product.other_image_link} alt="imageDetails" />
+          <img src={product.image_link} alt="imageDetails" className="imageDetails" />
         </article>
         <article className="col-7">
           <h1>{product.name}</h1>
           <h3>Rs. {product.price}</h3>
 
-          <img src={star} alt="imageDetails" />
-          <hr className="separatorDetails" />
-
-          <p>5 Customer Review</p>
+          <div className="container">
+            <img src={star} alt="imageDetails" />
+            <hr className="separatorDetails" />
+            <p>5 Customer Review</p>
+          </div>
 
           <p className="description">{product.description}</p>
           
@@ -67,31 +68,33 @@ function ProductsDetails() {
             <div className="col-1 color color3"></div>
           </div>
 
-          <div className="number-input">
-            <button className="minus-btn" onClick={handleDecrement}>-</button>
-            <input type="text" className="quantity" value={quantity} readOnly />
-            <button className="plus-btn" onClick={handleIncrement}>+</button>
+          <div className="container">
+            <div className="number-input">
+              <button className="minus-btn" onClick={handleDecrement}>-</button>
+              <input type="text" className="quantity" value={quantity} readOnly />
+              <button className="plus-btn" onClick={handleIncrement}>+</button>
+            </div>
+
+            <button id="button">Add To Cart</button>
+            <button id="button">+ Compare</button>
           </div>
 
-          <button id="button">Add To Cart</button>
-          <button id="button">+ Compare</button>
-
-          <hr />
+          <hr id="separatorDetail" />
 
           <article className="row">
-            <div className="col-1">
+            <div className="col-2">
               <p>SKU</p>
               <p>Category</p>
               <p>Tags</p>
               <p>Share</p>
             </div>
-            <div className="col-4">
-              <p>: SS001</p>
-              <p>: Sofas</p>
+            <div className="col-5">
+              <p>: {product.sku}</p>
+              <p>: {product.category.name}</p>
               <p>: Sofa, Chair, Home, Shop</p>
               <p>: 
-                <img src={facebook} alt="Facebook" />
-                <img src={linkedin} alt="Linkedin" />
+                <img className="margin-right" src={facebook} alt="Facebook" />
+                <img className="margin-right" src={linkedin} alt="Linkedin" />
                 <img src={twitter} alt="Twitter" />
               </p>
             </div>
@@ -102,7 +105,7 @@ function ProductsDetails() {
       <hr />
 
       <section className="pt-4 pb-5 text-center">
-        <h3>Description <span>Additional Information</span></h3>
+        <h3 id="information">Description <span>Additional Information</span></h3>
 
         <p>{product.large_description}</p>
       </section>
